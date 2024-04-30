@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleContacto.css">
+    <script src="https://kit.fontawesome.com/6c63904138.js" crossorigin="anonymous"></script>
+
+    <title>Quinto Catorce</title>
+    <link rel="icon" href="./Imagenes/sticker caja.png">
+</head>
+
+<body>
+    <section class="form-contact">
+        <header>
+            <span>
+                <i class="fa fa-paper-plane-o"></i>
+            </span>
+        </header>
+
+
+        <form action="https://formspree.io/f/xvoywdyk" method="POST" class="contact" onsubmit="return validation()"
+            action="">
+
+            <label for="name">Nombre y Apellido</label>
+            <input type="text" name="nombre" id="name"> <label id="msn"></label>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email"> <label id="msnm"></label>
+
+            <label for="phone">Celular</label>
+            <input type="tel" name="phone" id="phone"> <label id="msnp"></label>
+
+            <label for="mensaje">Dejanos tus comentarios</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Suscribite al Newsletter</label>
+
+            <input type="submit" value="Enviar" />
+
+        </form>
+    </section>
+
+    <script>
+
+        function validation() {
+            valorsalida = true;
+
+            valor = document.getElementById("name").value;
+
+            if (valor == null || valor.length == 0) {
+                document.getElementById('msn').innerHTML = "Falta nombre";
+                elemento = document.getElementById('name');
+                elemento.focus();
+                valorsalida = false;
+            }
+
+            valor = document.getElementById("email").value;
+
+            if (!(/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/) || valor == null || valor.length == 0) {
+                document.getElementById('msnm').innerHTML = "Falta email";
+                elemento = document.getElementById('email');
+                elemento.focus();
+                valorsalida = false;
+            }
+
+            valor = document.getElementById("phone").value;
+
+            if (isNaN(valor) || valor == null || valor.length == 0) {
+                document.getElementById('msnp').innerHTML = "Falta numero";
+                elemento = document.getElementById('phone');
+                elemento.focus();
+                valorsalida = false;
+
+            }
+
+            return valorsalida;
+        }
+    </script>
+    </main>
+
+</body>
+</html>
