@@ -65,7 +65,7 @@ ul li ul.dropdown li {
     display: block;
 }
 ul li ul.dropdown {
-    width: 100%;
+    width: 10%;
     background: #2e3973;
     position: absolute;
     z-index: 999;
@@ -136,7 +136,7 @@ ul li:hover ul.dropdown{
    
 
     .slider-frame {
-        width: 1350px;
+        width: 1263px;
         height: 550px;
         margin-top:30px;
         overflow: hidden;
