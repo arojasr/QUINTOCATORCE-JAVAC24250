@@ -45,13 +45,7 @@ align-items: center;
 .nav-menu li {
     background-color:midnightblue;
     margin-right: 1.5rem;
-
-    
 }
-
-
-
-
 
 .nav-menu li{    background-color: #25316D;
     border: 2px solid;
@@ -66,7 +60,26 @@ align-items: center;
 border-color: #25316D;
 }
 
-    
+
+ul li ul.dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: #2e3973;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+/*
+ul li a:hover {
+    background: #BFBDBC;
+}*/
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
 .link{
     border-radius: 20px;
 }

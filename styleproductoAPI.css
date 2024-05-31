@@ -11,49 +11,50 @@ body{
     background-color:rgb(213, 213, 228);
 }
 
-/* FOOTER */
+
 .pieDePagina .seccion2{
-background-color: #BFBDBC;
-padding: 15px 10px;
-text-align: center;
-color: white;
-}
-
-.pieDePagina .seccion1{
-    display: flex;
-    background-color: #D5D2D1;
-}
-
-.pieDePagina .box1{
-    margin: 0 30px;
-    order: 0;
-}
-
-.pieDePagina .box2{
-    margin: 0 30px;
-    order: 1;
-}
-
-.pieDePagina .box3{
-    margin: 0 30px;
-    order: 2;
-}
-
-.box1 .logo{
-   align-self: center;
-   padding: 10px;
-
-}
-
-.envio{
-    background-color: #25316D;
-    color: white;
+    background-color: #BFBDBC;
+    padding: 15px 10px;
     text-align: center;
-    padding: 15px 10px; 
-    font-weight: bold;
-    font-family: Century Gothic; 
-
-}
+    color: white;
+    }
+    
+    .pieDePagina .seccion1{
+        display: flex;
+        background-color: #D5D2D1;
+    }
+    
+    .pieDePagina .box1{
+        margin: 0 30px;
+        order: 0;
+    }
+    
+    .pieDePagina .box2{
+        margin: 0 30px;
+        order: 1;
+    }
+    
+    .pieDePagina .box3{
+        margin: 0 30px;
+        order: 2;
+    }
+    
+    .box1 .logo{
+       align-self: center;
+       padding: 10px;
+    
+    }
+    
+    .envio{
+        background-color: #25316D;
+        color: white;
+        text-align: center;
+        padding: 15px 10px; 
+        font-weight: bold;
+        font-family: Century Gothic; 
+    
+    }
+    
 
 .qc{
     color: black;
@@ -77,24 +78,18 @@ color: white;
     background-color: white;
 }
 
-.product_new{
+.product-tarjeta{
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
     position: relative;
-    background-color: white;
+    background-color: yellow;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
-.product_new:before{
-    content: "NEW";
-    background: red;
-    padding: 10px;
-    width: 60px;
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    transform: rotate(-90deg);
-    color: white;
-}
+
 .title_product{
     text-align: center;
 }
@@ -177,7 +172,7 @@ ul li a:hover {
 ul li:hover ul.dropdown{
     display: block;
 }
-    
+
 .link{
     border-radius: 20px;
 }
@@ -235,3 +230,4 @@ a, li {
  
     color: aliceblue;
 }
+

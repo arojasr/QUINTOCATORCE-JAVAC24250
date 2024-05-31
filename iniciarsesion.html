@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleIniciarSession.css">
+    <script src="https://kit.fontawesome.com/6c63904138.js" crossorigin="anonymous"></script>
+
+    <title>Quinto Catorce</title>
+    <link rel="icon" href="./Imagenes/sticker caja.png">
+</head>
+
+<body>
+    <main>
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form method="POST" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" name="email" id="email" placeholder="Correo Electronico" required>
+                    <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                    <input type="button" class="submit" id="submit" onclick="ingresar()" value="Entrar">
+                </form>
+
+                <!--Register-->
+                <form action="#" class="formulario__register">
+                    <h2>Regístrarse</h2>
+                    <input type="text" placeholder="Nombre completo" id="R_nombrecompleto" required>
+                    <input type="text" placeholder="Correo Electronico" id="R_email" required>
+                    <input type="text" placeholder="Usuario" id="R_usuario" required>
+                    <input type="password" placeholder="Contraseña" id="R_password" required>
+                    <input type="button" class="submit" id="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </main>
+<script src="JS/iniciarsession.js"></script>
+</body>
+</html>
